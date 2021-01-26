@@ -4,3 +4,6 @@
 // prints "hi" in the browser's dev tools console
 console.log("hi");
 console.log('Hello from the Web App Dev 1 lab!');
+function likeIt() {
+  alert("Thanks! You're okay too");
+}
