@@ -23,5 +23,5 @@ function welcomeUser() {
   welcomeUserDiv.style.cursor = "pointer";
 }
 function hideWelcome() {
-  let 
+  let  
 }
