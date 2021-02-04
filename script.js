@@ -23,5 +23,7 @@ function welcomeUser() {
   welcomeUserDiv.style.cursor = "pointer";
 }
 function hideWelcome() {
-  let  
+  if (welcomeUser.style.display === "block") {
+    welcomeUser.style.display = "none";
+  }
 }
