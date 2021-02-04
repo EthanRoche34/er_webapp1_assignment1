@@ -22,6 +22,14 @@
   </head>
   <body>
     <section class="ui container">
+      <nav class="ui menu">
+        <header class="ui header active item">
+          <a href="index.html"> Playlist App</a>
+        </header>
+        <div class="right menu">
+          <a id="dashboard" class="item" href="dashboard.html"> Dashboard </a>
+        </div>
+      </nav>
       <section class="ui two column grid segment">
         <div class="ui column">
           <h2>Welcome to the Playlist App!</h2>
@@ -31,7 +39,7 @@
             playlists.
           </p>
           <div class="buttons">
-            <button class="ui blue button"  onclick="showHide()">
+            <button class="ui blue button" onclick="showHide()">
               Read more <i class="arrow circle right icon"></i>
             </button>
             <button class="ui green button" onclick="likeIt()">
@@ -48,8 +56,11 @@
               create an account, log in, and upload images to the app.
             </p>
           </div>
-          <div id="welcomeuser" class="ui message">
-          <p >Click this to close welcome</p></div>
+          <div
+            id="welcomeuser"
+            class="ui message"
+            onclick="hideWelcome()"
+          ></div>
         </div>
         <div class="ui column">
           <div class="ui grid">
