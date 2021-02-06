@@ -63,8 +63,8 @@ const sonatas = {
     if (userRating > 5 || userRating < 1 || isNaN(userRating)) {
       alert("Try again with a number between 1 and 5!");
     } else {
-      $("#rating").html('<p>"You gave a rating of: " + <p ) ;
-      
+      $("#rating").html("You gave a rating of: ") ;
+
       }
   }
 };
