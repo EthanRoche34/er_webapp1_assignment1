@@ -23,3 +23,4 @@ const start = {
 };
 
 // export the start module
+module.exports = start;
