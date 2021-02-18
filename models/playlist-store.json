@@ -33,6 +33,23 @@
           "artist": "Beethoven"
         }
       ]
+    },
+    {
+      "title": "Video Game Songs",
+      "songs": [
+        {
+          "title": "Life Will Change",
+          "artist": "Lyn Inaizumi"
+        },
+        {
+          "title": "Ideal and the Real",
+          "artist": "Toshiki Konishi"
+        },
+        {
+          "title": "Ideal and the Real-End Version",
+          "artist": "Toshiki Konishi"
+        }
+      ]
     }
   ]
 }
