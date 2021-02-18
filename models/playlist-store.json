@@ -2,16 +2,20 @@
   "playlistCollection": [
     {
       "title": "Beethoven Sonatas",
+      "duration": "10mins",
       "songs": [
         {
+          "id": "01",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven"
         },
         {
+          "id": "02",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven"
         },
         {
+          "id": "03",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven"
         }
@@ -19,16 +23,20 @@
     },
     {
       "title": "Beethoven Concertos",
+      "duration": "10mins",
       "songs": [
         {
+          "id": "11",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven"
         },
         {
+          "id": "12",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven"
         },
         {
+          "id": "13",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven"
         }
@@ -36,16 +44,20 @@
     },
     {
       "title": "Video Game Songs",
+      "duration": "20mins",
       "songs": [
         {
+          "id": "21",
           "title": "Life Will Change",
           "artist": "Lyn Inaizumi"
         },
         {
+          "id": "22",
           "title": "Ideal and the Real",
           "artist": "Toshiki Konishi"
         },
         {
+          "id": "23",
           "title": "Ideal and the Real-End Version",
           "artist": "Toshiki Konishi"
         }
