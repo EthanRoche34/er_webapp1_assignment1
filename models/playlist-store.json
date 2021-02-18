@@ -2,43 +2,49 @@
   "playlistCollection": [
     {
       "title": "Beethoven Sonatas",
-      "duration": "10mins",
+      "duration": "1:00:00",
       "songs": [
         {
           "id": "01",
           "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "25:00"
         },
         {
           "id": "02",
           "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "20:00"
         },
         {
           "id": "03",
           "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "15:00"
         }
       ]
     },
     {
       "title": "Beethoven Concertos",
-      "duration": "10mins",
+      "duration": "1:",
       "songs": [
         {
           "id": "11",
           "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "27:00"
         },
         {
           "id": "12",
           "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "34:00"
         },
         {
           "id": "13",
           "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
+          "artist": "Beethoven",
+          "songDuration": "48:00"
         }
       ]
     },
