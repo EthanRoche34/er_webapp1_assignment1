@@ -5,8 +5,11 @@ const playlistCollection = require('../models/playlist-store.js');
 
 const playlist = {
   index(request, response) {
+    const playlistId = request.params.id;
+    logger.debug('Playlist id = ' + playlistId);
     const viewData = {
       title: 'Playlist',
+      playlist: playlistStore.getPlaylist(playlistId),
     };
     response.render('playlist', viewData);
   },
