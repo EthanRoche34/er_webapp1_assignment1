@@ -1,83 +1,79 @@
 {
   "playlistCollection": [
     {
+      "id" : "01",
       "title": "Beethoven Sonatas",
-      "duration": "1:00:00",
+      "duration": 35,
       "songs": [
         {
-          "id": "01",
+          "id" : "04",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven",
-          "songDuration": "25:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 5
         },
         {
-          "id": "02",
+          "id" : "05",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven",
-          "songDuration": "20:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 6
         },
         {
-          "id": "03",
+          "id" : "06",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven",
-          "songDuration": "15:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 4
         }
       ]
     },
     {
+      "id" : "02",
       "title": "Beethoven Concertos",
-      "duration": "1:49:00",
+      "duration": 23,
       "songs": [
         {
-          "id": "11",
+          "id" : "07",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven",
-          "songDuration": "27:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 8
         },
         {
-          "id": "12",
+          "id" : "08",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven",
-          "songDuration": "34:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 3
         },
         {
-          "id": "13",
+          "id" : "09",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven",
-          "songDuration": "48:00",
-          "genre": "Classical"
+          "genre": "Classical",
+          "duration": 4
         }
       ]
     },
     {
-      "title": "Video Game Songs",
-      "duration": "00:17:43",
+      "id" : "03",
+      "title": "Beethoven Variations",
+      "duration": 67,
       "songs": [
         {
-          "id": "21",
-          "title": "Life Will Change",
-          "artist": "Lyn Inaizumi",
-          "songDuration": "4:23",
-          "genre": "Alternative/Indie"
+          "id" : "10",
+          "title": "Opus 34: Six variations on a theme in F major",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 11
         },
         {
-          "id": "22",
-          "title": "Ideal and the Real",
-          "artist": "Toshiki Konishi",
-          "songDuration": "6:03",
-          "genre": "Jazz"
-        },
-        {
-          "id": "23",
-          "title": "Ideal and the Real-End Version",
-          "artist": "Toshiki Konishi",
-          "songDuration": "7:17",
-          "genre": "Jazz"
+          "id" : "11",
+          "title": "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 45
         }
       ]
     }
