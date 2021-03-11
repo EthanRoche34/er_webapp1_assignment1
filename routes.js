@@ -17,7 +17,7 @@ router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 router.get('/playlist/:id', playlist.index);
 router.get('/playlist/:id/deleteSong/:songid', playlist.deleteSong);
-router.get('/playlist/deletePlaylist/:id', playlist.deletePlaylist);
+router.get('/dashboard/deletePlaylist/:id', playlist.deletePlaylist);
 
 // export router module
 module.exports = router;
