@@ -23,6 +23,7 @@ const dashboard = {
     logger.info('about to render', viewData.playlists);
     response.render('dashboard', viewData);
   },
+  
 };
 
 // export the dashboard module
