@@ -1,27 +1,36 @@
-'use strict';
+"use strict";
 
-const _ = require('lodash');
+const _ = require("lodash");
 
 const playlistStore = {
-
-  playlistCollection: require('./playlist-store.json').playlistCollection,
+  playlistCollection: require("./playlist-store.json").playlistCollection,
 
   getAllPlaylists() {
     return this.playlistCollection;
   },
 
-    getPlaylist(id) {
+  getPlaylist(id) {
     return _.find(this.playlistCollection, { id: id });
   },
 
-   removeSong(id, songId) {
+  removeSong(id, songId) {
     const playlist = this.getPlaylist(id);
     _.remove(playlist.songs, { id: songId });
   },
-  
+
   removePlaylist(id) {
-  _.remove(this.playlistCollection, { id: id });
+    _.remove(this.playlistCollection, { id: id });
   },
+
+  addSong(id, song) {
+    const playlist = this.getPlaylist(id);
+    playlist.songs.push(song);
+  },
+  
+  addPlaylist(playlist) {
+  this.playlistCollection.push(playlist);
+},
+
 };
 
 module.exports = playlistStore;

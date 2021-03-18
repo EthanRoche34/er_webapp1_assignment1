@@ -7,6 +7,7 @@ const developerStore = {
   getAllDevelopers() {
     return this.developers;
   },
+  
 
 };
 
