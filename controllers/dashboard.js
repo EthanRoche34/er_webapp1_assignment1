@@ -2,7 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
-const playlistStore = require('../models/playlist-store.js');
+const categoryStore = require('../models/category-store.js');
 const uuid = require('uuid');
 
 // create dashboard object
@@ -16,28 +16,28 @@ const dashboard = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
-      playlists: playlistStore.getAllPlaylists(),
+      title: 'RPG Archives App Dashboard',
+      categories: categoryStore.getAllcategories(),
     };
 
     // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.playlists);
+    logger.info('about to render', viewData.categories);
     response.render('dashboard', viewData);
   },
-  deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
+  deleteCategory(request, response) {
+    const categoryId = request.params.id;
+    logger.debug(`Deleting category ${categoryId}`);
+    categoryStore.removeCategory(categoryId);
     response.redirect('/dashboard');
   },
   
-    addPlaylist(request, response) {
-    const newPlayList = {
+    addCategory(request, response) {
+    const newCategory = {
       id: uuid(),
       title: request.body.title,
-      songs: [],
+      games: [],
     };
-    playlistStore.addPlaylist(newPlayList);
+    categoryStore.addCategory(newCategory);
     response.redirect('/dashboard');
   },
   

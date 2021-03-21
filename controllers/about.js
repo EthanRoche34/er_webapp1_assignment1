@@ -2,7 +2,7 @@
 
 // import all required modules
 const logger = require('../utils/logger');
-const developerStore = require('../models/developer-store.js');
+const studioStore = require('../models/studio-store.js');
 
 // create about object
 const about = {
@@ -15,8 +15,8 @@ const about = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'About the Playlist App',
-      developers: developerStore.getAllDevelopers(),
+      title: 'About the RPG Archives',
+      studio: studioStore.getStudio(),
     };
     
     // render the about view and pass through the data

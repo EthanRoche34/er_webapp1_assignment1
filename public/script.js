@@ -1,15 +1,6 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
-console.log("hi");
-console.log("Hello from the Web App Dev 1 lab!");
-function likeIt() {
-  alert("Thanks! You're okay too");
-}
 function showHide() {
   let readMoreDiv = document.getElementById("readmore");
-  readMoreDiv.style.color = "teal";
   if (readMoreDiv.style.display === "block") {
     readMoreDiv.style.display = "none";
   } else {
@@ -23,7 +14,7 @@ function welcomeUser() {
   document.getElementById("welcomeuser").innerHTML =
     "<p> Hello, " +
     username +
-    ", looking forward to hearing your playlists! Click this message to close it.</p>";
+    ", We hope you enjoy this app! Click this message to close it.</p>";
   welcomeUserDiv.style.cursor = "pointer";
 }
 
@@ -35,7 +26,7 @@ function hideWelcome() {
 }
 
 function getRating() {
-  let userRating = parseInt(prompt("Rate this collection (from 1 to 5 stars)"));
+  let userRating = parseInt(prompt("Rate this subgenre (from 1 to 5 stars)"));
   if (userRating>5 || userRating<1 || isNaN(userRating)){
     alert("Try again with a number between 1 and 5!");
   }
@@ -47,5 +38,14 @@ function getRating() {
   }
 }
 
-$(".delsong").click(() => confirm('Really delete this song?'))
-$(".delplaylist").click(() => confirm('Really delete this playlist?'))
+$(".delgame").click(() => confirm('Really delete this game?'))
+$(".delcategory").click(() => confirm('Really delete this category?'))
+
+$(function(){  //Based on code from https://www.codexworld.com/add-datepicker-to-input-field-jquery-ui/
+  $("#datepicker").datepicker({
+      dateFormat: "MM d, yy", 
+      changeMonth: true,
+      changeYear: true,
+      yearRange: "-40:+40"
+  });
+});

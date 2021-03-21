@@ -6,20 +6,20 @@ const express = require('express');
 const router = express.Router();
 
 // import controllers
-const start = require('./controllers/start.js');
+const welcome = require('./controllers/welcome.js');
 const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
-const playlist = require('./controllers/playlist.js');
+const category = require('./controllers/category.js');
 
 // connect routes to controllers
-router.get('/', start.index);
+router.get('/', welcome.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
-router.get('/playlist/:id', playlist.index);
-router.get('/playlist/:id/deleteSong/:songid', playlist.deleteSong);
-router.get('/dashboard/deletePlaylist/:id', dashboard.deletePlaylist);
-router.post('/playlist/:id/addsong', playlist.addSong);
-router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+router.get('/category/:id', category.index);
+router.get('/category/:id/deleteGame/:gameid', category.deleteGame);
+router.get('/dashboard/deletecategory/:id', dashboard.deleteCategory);
+router.post('/category/:id/addgame', category.addGame);
+router.post('/dashboard/addcategory', dashboard.addCategory);
 
 // export router module
 module.exports = router;
